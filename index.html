@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!----------------- Header of Website ---------------->
+      <div class="header">
+        <div class="searchBox">
+          <!-------------- Input Box of App ---------------->
+          <input
+            type="text"
+            placeholder="Enter Your Location"
+            class="input_box"
+          />
+          <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+        </div>
+      </div>
+
+      <div class="location_not_found">
+        <h2>Sorry, Location Not Found!!!</h2>
+        <img src="images/404.png" alt="404 Error" />
+      </div>
+
+      <!-- -------------- Weather Body of Website ------------ -->
+      <div class="weather_body">
+        <img src="images/cloud.png" alt="Weather Image" class="weather_img" />
+
+        <div class="weather_box">
+          <p class="temperature">0</p>
+          <p class="description">Light Rain</p>
+        </div>
+
+        <div class="weather_detail">
+          <div class="humidity">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="text">
+              <span id="humidity">45%</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+              <span id="wind_speed">20 KM/H</span>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------- JavaScript Content --------------->
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5a3a1ac61a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
